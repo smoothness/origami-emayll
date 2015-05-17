@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 emayll
 ======
 
@@ -95,4 +94,3 @@ The following are style defaults and will work only if the calls for them are us
 =======
 # origami-emayll
 Origami Academy Emayll
->>>>>>> 32966e914ec30c00957cc4f429136d61451deeed
