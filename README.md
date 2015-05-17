@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 emayll
 ======
 
@@ -91,3 +92,7 @@ The following are style defaults and will work only if the calls for them are us
 | ``` btn-c-base ``` | Sets the font color for button tables containing ```{{ page.btn-c-base }}``` as a CSS color. |
 | ``` btn-c-bg ``` | Sets the background color for button tables containing ```{{ page.btn-c-bg }}``` as a CSS color. |
 | ``` btn-c-shadow ``` | Sets the shadow color for button tables containing ```{{ page.btn-c-shadow }}``` as a CSS color. |
+=======
+# origami-emayll
+Origami Academy Emayll
+>>>>>>> 32966e914ec30c00957cc4f429136d61451deeed
