@@ -1,0 +1,21 @@
+# Site settings
+name: emayll
+title: HTML emails all up in Haml
+email: dand@envylabs.com
+description: "Origami Academy HTML emails in Haml and organized with Jekyll."
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+permalinks: pretty
+exclude: ['node_modules']
+
+# Collections
+collections:
+  patterns:
+    output: true
+  promotional:
+    output: true
+  transactional:
+    output: true

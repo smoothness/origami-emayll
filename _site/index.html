@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Origami Mailer App</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Origami Academy HTML emails in Haml and organized with Jekyll.">
+    <link rel="canonical" href="/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/sass/app.css">
+
+</head>
+
+
+  <body>
+
+    <!-- <header></header> -->
+
+
+    <div class="home">
+
+  <h1><img alt="Emayll" src="/images/logo--site.png" width="150" /></h1>
+
+
+  <!-- ===================================== -->
+  <!-- List of All Emails -->
+  <!-- ===================================== -->
+
+  <table border="0" cellspacing="0" cellpadding="10" id="emaylls">
+    <thead>
+      <tr>
+        <th>Title <img class="icn-toggle" height="16" src="/images/icon-toggle.svg" /></th>
+        <th>Categories <img class="icn-toggle" height="16" src="/images/icon-toggle.svg" /></th>
+        <th>Status <img class="icn-toggle" height="16" src="/images/icon-toggle.svg" /></th>
+        <th>Services <img class="icn-toggle" height="16" src="/images/icon-toggle.svg" /></th>
+        <th>Purpose <img class="icn-toggle" height="16" src="/images/icon-toggle.svg" /></th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td><a class="post-link" href="/patterns/global.html">Global Patterns</a></h3></td>
+          <td class="categories">patterns</td>
+          <td class="status status--inactive">inactive</td>
+          <td class="service service--servicename">servicename</td>
+          <td class="purpose">The patterns that are used in nearly every email.</td>
+        </tr>
+      
+      
+        <tr>
+          <td><a class="post-link" href="/transactional/transactional-base.html">A Transactional Email</a></h3></td>
+          <td class="categories">transactional</td>
+          <td class="status status--inactive">inactive</td>
+          <td class="service service--none">none</td>
+          <td class="purpose">A base starter file for promotional emails.</td>
+        </tr>
+      
+      
+        <tr>
+          <td><a class="post-link" href="/promotional/origami-enero-2015.html">Academia Origami - Cursos para Enero 2015</a></h3></td>
+          <td class="categories">promotional</td>
+          <td class="status status--active">active</td>
+          <td class="service service--none">none</td>
+          <td class="purpose">Promocionar los cursos Básicos</td>
+        </tr>
+      
+        <tr>
+          <td><a class="post-link" href="/promotional/origami-febrero-2015.html">Academia Origami - Cursos para Febrero 2015</a></h3></td>
+          <td class="categories">promotional</td>
+          <td class="status status--active">active</td>
+          <td class="service service--none">none</td>
+          <td class="purpose">Promocionar los cursos Básicos</td>
+        </tr>
+      
+        <tr>
+          <td><a class="post-link" href="/promotional/origami-noviembre-2014.html">Academia Origami - Cursos para Diciembre - JS Full Stack</a></h3></td>
+          <td class="categories">promotional</td>
+          <td class="status status--active">active</td>
+          <td class="service service--none">none</td>
+          <td class="purpose">Promocionar los cursos Básicos</td>
+        </tr>
+      
+        <tr>
+          <td><a class="post-link" href="/promotional/origami-octubre-2014.html">Academia Origami - Cursos Básicos de Desarrollo Web</a></h3></td>
+          <td class="categories">promotional</td>
+          <td class="status status--active">active</td>
+          <td class="service service--none">none</td>
+          <td class="purpose">Promocionar los cursos Básicos</td>
+        </tr>
+      
+        <tr>
+          <td><a class="post-link" href="/promotional/origami-setiembre-2014.html">Academia Origami - Cursos para Setiembre</a></h3></td>
+          <td class="categories">promotional</td>
+          <td class="status status--active">active</td>
+          <td class="service service--none">none</td>
+          <td class="purpose">Promocionar los cursos de Setiembre</td>
+        </tr>
+      
+        <tr>
+          <td><a class="post-link" href="/promotional/promotional-base.html">A Promotional Email</a></h3></td>
+          <td class="categories">promotional</td>
+          <td class="status status--inactive">inactive</td>
+          <td class="service service--none">none</td>
+          <td class="purpose">A base starter file for transactional emails.</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+</div>
+
+
+    <!-- <footer></footer> -->
+
+
+    <script src="/js/jquery-2.1.1.min.js"></script>
+
+    <script src="/js/tablesorter.min.js"></script>
+
+    <script>
+
+      $(function(){
+        $("#emaylls").tablesorter();
+      });
+
+    </script>
+
+  </body>
+
+</html>

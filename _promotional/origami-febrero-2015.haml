@@ -1,0 +1,137 @@
+---
+layout: email
+title:  "Academia Origami - Cursos para Febrero 2015"
+categories: promotional
+service: "none"
+status: "active"
+purpose: "Promocionar los cursos Básicos"
+tracker: ?utm_medium=email&utm_campaign=NAME_OF_THIS_THING_NOT_IN_CAPS&utm_source=mandrill&utm_content=null
+
+hdr-c-base: "#37a381"
+hdr-c-bg: "#000000"
+hdr-c-link: "#0b684d"
+hdr-border: "border-bottom: 3px solid #71bf31;"
+
+ftr-c-base: "#ffffff"
+ftr-c-bg: "#000000"
+ftr-c-link: "#71bf31"
+ftr-border: "border-top: 3px solid #71bf31;"
+
+tbl-base: "border: '0', cellpadding: '0', cellspacing: '0'"
+tbl-typeset: "font-family: 'Roboto Slab', Helvetica, Tahoma, sans-serif; font-size: 16px; line-height: 1.4;"
+c-bg: "#000000"
+bgd: "#ffffff url(http://www.origami.academy/__emayll/img/canvas-pattern-dark.png) 0 0 repeat"
+c-base: "#666666"
+c-link: "#71bf31"
+c-title: "#3f4944"
+gutter: "20"
+
+btn-c-base-light: "#000000"
+btn-c-bg-light: "transparent"
+btn-border-light: "1px solid #000000"
+btn-c-base-dark: "#ffffff"
+btn-c-bg-dark: "transparent"
+btn-border-dark: "1px solid #ffffff"
+---
+
+/ =====================================
+/   Header Includes
+/ =====================================
+{% include email-header.haml %}
+
+/ =====================================
+/   Content First Block - Nuevos Precios
+/ =====================================
+%table{ style: "color: {{ page.c-base }}; background: {{ page.bgd }}; {{ page.tbl-typeset }}", width: "100%", {{ page.tbl-base}} }
+  %tr
+    %td
+      %table.flex-size{ align: "center", style: "color: {{ page.c-base }};", width: "600", {{ page.table-base }} }
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "25" }
+
+        / =====================================
+        /   Content
+        / =====================================
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "left" }
+
+            %h1{ style: "font-family: 'Source Sans Pro', sans-serif; font-size: 34px; font-weight: 900; color: #000000; line-height: 90%; margin: 0; margin: 0 0 15px 0; text-align: center; text-transform: uppercase;" } Cursos para Febrero 2015
+
+            %h2{ style: "font-family: 'Source Sans Pro', sans-serif; font-size: 28px; font-weight: 700; color: #000000; text-align: center; text-transform: uppercase; margin: 0 0 20px 0; border-top: 1px dotted #000000; border-bottom: 1px dotted #000000"} 15% de Descuento para Colaboradores de Prodigious
+
+          %td{ width: "{{ page.gutter }}" }
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "40" }
+
+/ =====================================
+/   Content Second Block - HTML & CSS
+/ =====================================
+%table{ style: "color: {{ page.c-base }}; background-color: {{ page.c-bg }}; {{ page.tbl-typeset }}", width: "100%", {{ page.tbl-base}} }
+  %tr
+    %td
+      %table.flex-size{ align: "center", style: "color: {{ page.c-base }};", width: "600", {{ page.table-base }} }
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "60" }
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "left" }
+
+            %img{ alt: "Curso de HTML & CSS en Academia Origami", src: "http://www.origami.academy/__emayll/img/html-css-dark.png", style: "display: block;", width: "560" }
+
+            %h2{ style: "font-family: 'Source Sans Pro', sans-serif; font-size: 28px; font-weight: 700; color: #FFF; text-align: center; text-transform: uppercase; margin: 25px 0 15px 0;"} Introducción al Desarrollo Web
+
+            %p{ style: "margin: 0 0 10px 0; font-family: 'Roboto Slab', sans-serif; text-align: justify; color: #FFF" } Este curso es para principiantes que quieren aprender a construir sitios y aplicaciones web desde cero que sean escalables y funcionen en cualquier tipo de dispositivo, incluyendo Smartphones y tablets. En este curso se ven tecnologías como HTML(5), CSS(3), Responsive Web Design, Grid based layouts y Twitter Bootstrap.
+
+            %p{ style: "margin: 0 0 10px 0; font-family: 'Roboto Slab', sans-serif; color: #FFF" } <strong>Instructor:</strong> Mauricio Poveda
+
+            %p{ style: "color: #8bc74a; font-family: 'Roboto Slab', sans-serif; font-weight: 500; margin: 0 0 30px 0; text-align: left;"} Inicio: Sábado 7 de Febrero
+
+            %a{ href: "http://origami.academy/cursos/html-css.html", target: "_blank", style: "color: {{ page.btn-c-base-dark }}; background-color: {{ page.btn-c-bg-light }}; border: {{ page.btn-border-dark }}; display: inline-block; font-family: 'Roboto Slab', sans-serif; ont-size: 14px; font-weight: 700; line-height: 100%; padding: 20px 0; margin-left: 50%; width: 200px; left: -100px; position: relative; letter-spacing: 1px; text-align: center; text-decoration: none; text-transform: uppercase; "} Ver Detalles
+
+          %td{ width: "{{ page.gutter }}" }
+        / Spacer
+
+        %tr
+          %td{ colspan: "3", height: "60" }
+
+/ =====================================
+/   Content Second Block - JavaScript Básico
+/ =====================================
+%table{ style: "color: {{ page.c-base }}; background: {{ page.bgd }}; {{ page.tbl-typeset }}", width: "100%", {{ page.tbl-base}} }
+  %tr
+    %td
+      %table.flex-size{ align: "center", style: "color: {{ page.c-base }};", width: "600", {{ page.table-base }} }
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "60" }
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "left" }
+
+            %img{ alt: "Taller de Bootstrap en Academia Origami", src: "http://www.origami.academy/__emayll/img/bootstrap-mail.jpg", style: "display: block;", width: "560" }
+
+            %h2{ style: "font-family: 'Source Sans Pro', sans-serif; font-size: 28px; font-weight: 700; color: #000; text-align: center; text-transform: uppercase; margin: 25px 0 15px 0;"} Taller de Bootstrap Gratuito
+
+            %p{ style: "margin: 0 0 10px 0; font-family: 'Roboto Slab', sans-serif; text-align: justify" } Bootstrap es el Framework de Front End más utilizado actualmente. Aprenda a sacar el máximo provecho de esta herramienta para iniciar un proyecto web en poco tiempo. Aprenda a utilizar containers, responsive grids, botones, navegaciones y otros componentes. Este taller es gratuito y con cupo limitado. Para reservar un espacio favor escribir al siguiente email: <a href="mailto:info@origami.academy" style="text-decoration:none; color:#8bc74a">info@origami.academy</a>
+
+            %p{ style: "margin: 0 0 10px 0; font-family: 'Roboto Slab', sans-serif;" } <strong>Instructor:</strong> Mauricio Poveda
+
+            %p{ style: "color: #8bc74a; font-family: 'Roboto Slab', sans-serif; font-weight: 500; margin: 0 0 30px 0; text-align: left;"} Fecha: Jueves 12 de Febrero - 6:00 P.M.
+
+            %a{ href: "mailto:info@origami.academy", style: "color: {{ page.btn-c-base-light }}; background-color: {{ page.btn-c-bg-light }}; border: {{ page.btn-border-light }}; display: inline-block; font-family: 'Roboto Slab', sans-serif; ont-size: 14px; font-weight: 700; line-height: 100%; padding: 20px 0; margin-left: 50%; width: 200px; left: -100px; position: relative; letter-spacing: 1px; text-align: center; text-decoration: none; text-transform: uppercase; "} Reservar
+
+          %td{ width: "{{ page.gutter }}" }
+        / Spacer
+
+        %tr
+          %td{ colspan: "3", height: "60" }
+
+/ =====================================
+/   Footer Include
+/ =====================================
+
+{% include email-footer.haml %}

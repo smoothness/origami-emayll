@@ -1,0 +1,56 @@
+---
+layout: default
+title: Origami Mailer App
+---
+
+<div class="home">
+
+  <h1><img alt="Emayll" src="/images/logo--site.png" width="150" /></h1>
+
+
+  <!-- ===================================== -->
+  <!-- List of All Emails -->
+  <!-- ===================================== -->
+
+  <table border="0" cellspacing="0" cellpadding="10" id="emaylls">
+    <thead>
+      <tr>
+        <th>Title <img class="icn-toggle" height="16" src="/images/icon-toggle.svg" /></th>
+        <th>Categories <img class="icn-toggle" height="16" src="/images/icon-toggle.svg" /></th>
+        <th>Status <img class="icn-toggle" height="16" src="/images/icon-toggle.svg" /></th>
+        <th>Services <img class="icn-toggle" height="16" src="/images/icon-toggle.svg" /></th>
+        <th>Purpose <img class="icn-toggle" height="16" src="/images/icon-toggle.svg" /></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for post in site.patterns %}
+        <tr>
+          <td><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h3></td>
+          <td class="categories">{{ post.categories }}</td>
+          <td class="status status--{{ post.status }}">{{ post.status }}</td>
+          <td class="service service--{{ post.service }}">{{ post.service }}</td>
+          <td class="purpose">{{ post.purpose }}</td>
+        </tr>
+      {% endfor %}
+      {% for post in site.transactional %}
+        <tr>
+          <td><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h3></td>
+          <td class="categories">{{ post.categories }}</td>
+          <td class="status status--{{ post.status }}">{{ post.status }}</td>
+          <td class="service service--{{ post.service }}">{{ post.service }}</td>
+          <td class="purpose">{{ post.purpose }}</td>
+        </tr>
+      {% endfor %}
+      {% for post in site.promotional %}
+        <tr>
+          <td><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h3></td>
+          <td class="categories">{{ post.categories }}</td>
+          <td class="status status--{{ post.status }}">{{ post.status }}</td>
+          <td class="service service--{{ post.service }}">{{ post.service }}</td>
+          <td class="purpose">{{ post.purpose }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+</div>

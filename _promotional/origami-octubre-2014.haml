@@ -1,0 +1,136 @@
+---
+layout: email
+title:  "Academia Origami - Cursos Básicos de Desarrollo Web"
+categories: promotional
+service: "none"
+status: "active"
+purpose: "Promocionar los cursos Básicos"
+tracker: ?utm_medium=email&utm_campaign=NAME_OF_THIS_THING_NOT_IN_CAPS&utm_source=mandrill&utm_content=null
+
+hdr-c-base: "#37a381"
+hdr-c-bg: "#000000"
+hdr-c-link: "#0b684d"
+hdr-border: "border-bottom: 3px solid #71bf31;"
+
+ftr-c-base: "#ffffff"
+ftr-c-bg: "#000000"
+ftr-c-link: "#71bf31"
+ftr-border: "border-top: 3px solid #71bf31;"
+
+tbl-base: "border: '0', cellpadding: '0', cellspacing: '0'"
+tbl-typeset: "font-family: 'Roboto Slab', Helvetica, Tahoma, sans-serif; font-size: 16px; line-height: 1.4;"
+c-bg: "#000000"
+bgd: "#ffffff url(http://www.origami.academy/__emayll/img/canvas-pattern-dark.png) 0 0 repeat"
+c-base: "#666666"
+c-link: "#71bf31"
+c-title: "#3f4944"
+gutter: "20"
+
+btn-c-base-light: "#000000"
+btn-c-bg-light: "transparent"
+btn-border-light: "1px solid #000000"
+btn-c-base-dark: "#ffffff"
+btn-c-bg-dark: "transparent"
+btn-border-dark: "1px solid #ffffff"
+---
+
+/ =====================================
+/   Header Includes
+/ =====================================
+{% include email-header.haml %}
+
+/ =====================================
+/   Content First Block - Introduction
+/ =====================================
+%table{ style: "color: {{ page.c-base }}; background: {{ page.bgd }}; {{ page.tbl-typeset }}", width: "100%", {{ page.tbl-base}} }
+  %tr
+    %td
+      %table.flex-size{ align: "center", style: "color: {{ page.c-base }};", width: "600", {{ page.table-base }} }
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "25" }
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "left" }
+            %h1{ style: "font-family: 'Source Sans Pro', sans-serif; font-size: 34px; font-weight: 900; color: #000000; line-height: 90%; margin: 0; margin: 0 0 15px 0; text-align: center; text-transform: uppercase;" } Cursos de Desarrollo Web Introductorios
+            %p{ style: "margin: 0 0 15px 0; font-family: 'Roboto Slab', sans-serif;" } En el país la oferta de trabajos para Front-End Web Developers se ha incrementado de gran manera en los últimos años gracias a la llegada de agencias digitales multinacionales y también la apertura de nuevas agencias nacionales. Las habilidades técnicas para estas posiciones son <strong>HTML, CSS y JavaScript</strong>.
+            %p{ style: "margin: 0 0 25px 0; font-family: 'Roboto Slab', sans-serif; line-height: 1.5" } En Origami hemos diseñado 2 cursos especiamente para las personas que nunca han tocado código y quieren agregar estas habilidades a su CV, estos cursos están hechos para llevar al participante de un estado totalmente principiante, hasta poder construir un sitio web desde cero codificando a mano con estas 3 tecnologías.
+            %p{ style: "margin: 0 0 25px 0; font-family: 'Roboto Slab', sans-serif; line-height: 1.5" }  <a href="http://origami.academy/" target="_blank" style="background-color: {{ page.c-link }}; color: #ffffff; padding: 2px 7px 5px; text-align: center; font-family: 'Roboto Slab', sans-serif; text-decoration: none">www.origami.academy</a>
+
+          %td{ width: "{{ page.gutter }}" }
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "10" }
+
+/ =====================================
+/   Content Second Block - HTML & CSS
+/ =====================================
+%table{ style: "color: {{ page.c-base }}; background-color: {{ page.c-bg }}; {{ page.tbl-typeset }}", width: "100%", {{ page.tbl-base}} }
+  %tr
+    %td
+      %table.flex-size{ align: "center", style: "color: {{ page.c-base }};", width: "600", {{ page.table-base }} }
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "60" }  
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "left" }
+            %h2{ style: "font-family: 'Source Sans Pro', sans-serif; font-size: 28px; font-weight: 700; color: #ffffff; text-align: center; text-transform: uppercase; margin: 0 0 15px 0; border-top: 1px dotted #ffffff; border-bottom: 1px dotted #ffffff"} HTML(5) & CSS(3)
+          %td{ width: "{{ page.gutter }}" }
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "20" }
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "center" }
+            %table{ align: "center", width: "260", {{ page.tbl-base}} }
+              %tr
+                %td
+                  %p{ style: "text-align: center; margin: 0 0 10px 0;" }
+                    %img{ alt: "Origami Academy - Curso de HTML & CSS", src: "http://www.origami.academy/__emayll/img/html-css.png" }
+                  %h4{ style: "font-family: 'Source Sans Pro', sans-serif; font-size: 18px; font-weight: 700; color: #ffffff; text-align: center; text-transform: uppercase; margin: 0;"} HTML & CSS
+                  %p{ style: "color: #71bf31; font-family: 'Roboto Slab', sans-serif; font-size: 14px; font-weight: 300; margin: 0 0 10px 0; text-align: center;"} Inicio: Sábado 4 de Octubre
+                  %a{ href: "http://origami.academy/cursos/html-css.html", target: "_blank", style: "color: {{ page.btn-c-base-dark }}; background-color: {{ page.btn-c-bg-dark }}; border: {{ page.btn-border-dark }}; display: block; font-family: 'Roboto Slab', sans-serif; font-size: 14px; font-weight: 700; line-height: 4; letter-spacing: 1px; text-align: center; text-decoration: none; text-transform: uppercase; "} Ver Detalles
+          %td{ width: "{{ page.gutter }}" }
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "60" }
+
+/ =====================================
+/   Content Third Block - JS
+/ =====================================
+%table{ style: "color: {{ page.c-base }}; background-color: {{ page.c-bg }}; {{ page.tbl-typeset }}", width: "100%", {{ page.tbl-base}} }
+  %tr
+    %td
+      %table.flex-size{ align: "center", style: "color: {{ page.c-base }};", width: "600", {{ page.table-base }} }
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "15" }  
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "left" }
+            %h2{ style: "font-family: 'Source Sans Pro', sans-serif; font-size: 28px; font-weight: 700; color: #ffffff; text-align: center; text-transform: uppercase; margin: 0 0 15px 0; border-top: 1px dotted #ffffff; border-bottom: 1px dotted #ffffff"} JavaScript Introductorio
+          %td{ width: "{{ page.gutter }}" }
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "15" }
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "center" }
+            %table{ align: "center", width: "260", {{ page.tbl-base}} }
+              %tr
+                %td
+                  %p{ style: "text-align: center; margin: 0 0 10px 0;" }
+                    %img{ alt: "Origami Academy - Curso de JavaScript Introductorio", src: "http://www.origami.academy/__emayll/img/javascript.png" }
+                  %h4{ style: "font-family: 'Source Sans Pro', sans-serif; font-size: 17px; font-weight: 700; color: #ffffff; text-align: center; text-transform: uppercase; margin: 0;"} JavaScript Introductorio
+                  %p{ style: "color: #71bf31; font-family: 'Roboto Slab', sans-serif; font-size: 14px; font-weight: 300; margin: 0 0 10px 0; text-align: center;"} Inicio: Sábado 11 de Octubre
+                  %a{ href: "http://origami.academy/cursos/javascript-basic.html", target: "_blank", style: "color: {{ page.btn-c-base-dark }}; background-color: {{ page.btn-c-bg-dark }}; border: {{ page.btn-border-dark }}; display: block; font-family: 'Roboto Slab', sans-serif; font-size: 14px; font-weight: 700; line-height: 4; letter-spacing: 1px; text-align: center; text-decoration: none; text-transform: uppercase; "} Ver Detalles
+          %td{ width: "{{ page.gutter }}" }
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "60" }
+/ =====================================
+/   Footer Include
+/ =====================================
+
+{% include email-footer.haml %}

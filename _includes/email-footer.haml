@@ -1,0 +1,42 @@
+/ =====================================
+/   Footer Container
+/ =====================================
+
+%table{ bgcolor: "{{ page.ftr-c-bg }}", style: "{{ page.ftr-border }}", width: "100%", {{ page.table-base }} }
+  %tr
+    %td
+
+      / =====================================
+      /   Footer Content
+      / =====================================
+
+      %table.flex-size{ align: "center", style: "color: {{ page.ftr-c-base }}; {{ page.tbl-typeset }} font-size: 14px;", width: "600", {{ page.table-base }} }
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "20" }
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "center" }
+            %a{ href: "https://www.facebook.com/origami.academy.cr", target: "_blank", style: "text-decoration: none; color: {{ page.ftr-c-link }}" }
+              %img{ src: "http://www.origami.academy/__emayll/img/facebook-social.png", width: "30", alt: "Academia Origami - Facebook"}
+              %span{ style: "margin-left: 12px; vertical-align: super;"} Síganos en Facebook
+            %a{ href: "https://www.twitter.com/OrigamiAcademy1", target: "_blank", style: "text-decoration: none; color: {{ page.ftr-c-link }}; margin-left: 30px" }
+              %img{ src: "http://www.origami.academy/__emayll/img/twitter-social.png", width: "30", alt: "Academia Origami - Twitter"}
+              %span{ style: "margin-left: 12px; vertical-align: super;"} Síganos en Twitter
+          %td{ width: "{{ page.gutter }}" }
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "center" }
+            %a{ style: "color: {{ page.ftr-c-link }}; text-decoration: none;", href: "mailto:info@origami.academy" } email: info@origami.academy
+          %td{ width: "{{ page.gutter }}" }
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "10" }
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "center" }
+            %a{ href: "#", style: "color: #aaaaaa; text-decoration: underline; font-size: 14px" }Unsubscribe
+          %td{ width: "{{ page.gutter }}" }
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "40" }
